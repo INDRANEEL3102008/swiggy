@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy Clone - Order Food Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Login Screen -->
+    <div id="login-screen">
+        <h2>Welcome to Swiggy Clone</h2>
+        <input type="text" id="username" placeholder="Enter Username">
+        <input type="password" id="password" placeholder="Enter Password">
+        <button onclick="login()">Sign In</button>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="hidden">
+        <div class="header">
+            <h1>Swiggy Clone</h1>
+            <span id="clock"></span>
+            <button onclick="logout()">Logout</button>
+        </div>
+
+        <!-- Food Menu -->
+        <div class="food-menu">
+            <h2>Delicious Food Menu</h2>
+            <div class="food-grid">
+                <!-- Food Items (More added) -->
+                <div class="food-item" data-name="Burger" data-price="99">
+                    <img src="https://img.freepik.com/premium-photo/detailed-bestquality-two-burgers-4k-hd-photo_1193781-9907.jpg" alt="Burger">
+                    <h3>Burger</h3>
+                    <p>₹99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="food-item" data-name="Pizza" data-price="199">
+                    <img src="https://images3.alphacoders.com/129/1290151.jpg" alt="Pizza">
+                    <h3>Pizza</h3>
+                    <p>₹199</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="food-item" data-name="Pasta" data-price="149">
+                    <img src="https://images.alphacoders.com/130/1308370.jpg" alt="Pasta">
+                    <h3>Pasta</h3>
+                    <p>₹149</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="food-item" data-name="Sushi" data-price="299">
+                    <img src="https://images3.alphacoders.com/276/276815.jpg" alt="Sushi">
+                    <h3>Sushi</h3>
+                    <p>₹299</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="food-item" data-name="Fries" data-price="79">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZiUIEKcA0miifu6C-T18e945JPFv7NJAKoA&s" alt="Fries">
+                    <h3>Fries</h3>
+                    <p>₹79</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="food-item" data-name="Ice Cream" data-price="129">
+                    <img src="https://images7.alphacoders.com/421/thumb-1920-421534.jpg" alt="Ice Cream">
+                    <h3>Ice Cream</h3>
+                    <p>₹129</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shopping Cart -->
+        <div class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <h3>Total: ₹<span id="total-price">0</span></h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
